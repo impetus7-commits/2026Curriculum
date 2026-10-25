@@ -1,3 +1,4 @@
+<!doctype html><html><head><meta charset=utf8><meta name=viewport content="width=device-width,initial-scale=1"><style>:root{color-scheme:light}body{margin:0;padding:0;font:14px -apple-system,BlinkMacSystemFont,sans-serif;background:#faf9f5;color:#141413}img{max-width:100%}[hidden]:not([hidden=until-found i]){display:none!important}</style></head><body>
 <!DOCTYPE html>
 <html lang="ko">
 <head>
@@ -499,11 +500,14 @@
       <span class="d-date">26.10.02.</span>
       <span class="d-lbl">2학년 선택과목<br>학점 개편 확정</span>
     </button>
-    <button class="date-btn disabled" disabled><span class="d-date">26.10.23.</span><span class="d-lbl">교과별 수정사항 검토<br>(자료 준비 중)</span></button>
-    <button class="date-btn disabled" disabled><span class="d-date">-</span><span class="d-lbl">추가 예정</span></button>
-    <button class="date-btn disabled" disabled><span class="d-date">-</span><span class="d-lbl">추가 예정</span></button>
-    <button class="date-btn disabled" disabled><span class="d-date">-</span><span class="d-lbl">추가 예정</span></button>
-    <button class="date-btn disabled" disabled><span class="d-date">-</span><span class="d-lbl">추가 예정</span></button>
+    <button class="date-btn ready" data-session="session-s1023">
+      <span class="d-date">26.10.23.</span>
+      <span class="d-lbl">교과별 수정사항<br>심의</span>
+    </button>
+    <button class="date-btn disabled" disabled style="grid-column:1 / -1; flex-direction:row; min-height:56px; gap:12px;">
+      <span class="d-date" style="font-size:.95rem;">2027</span>
+      <span class="d-lbl" style="font-size:.86rem;">2027학년도 교육과정 보기(미확정)</span>
+    </button>
   </div>
 
   <div class="xlsx-launcher" id="otherSchoolSection" style="border-top:none; margin-top:8px; padding-top:0;">
@@ -1052,6 +1056,127 @@
 </div><!-- /#session-s1002 -->
 
 
+<div class="session-view" id="session-s1023" hidden>
+  <div class="back-row"><button class="back-btn">◀ 회차 목록으로</button></div>
+  <div class="topbar" style="position:static; margin-top:8px;">
+    <div class="brand-row">
+      <div>
+        <h1 style="font-size:clamp(1.1rem,.9rem + 1vw,1.5rem);">교과별 선택과목 편성 수정(안)</h1>
+        <div class="brand-sub">휘경여자고등학교 교육과정위원회 회의자료</div>
+      </div>
+      <div class="meta-pills">
+        <span class="pill">🗓 2026.10.23(금) 15:30</span>
+        <span class="pill">📍 VR 미팅룸</span>
+      </div>
+    </div>
+  </div>
+
+  <main>
+    <section style="padding-top:20px;">
+      <p class="eyebrow">Ⅰ · 회의 개요</p>
+      <h2>관리자 협의를 거친 4개 안건을 심의합니다</h2>
+      <p class="lead">10.2 회의에서 2학년 선택과목 개편을 확정한 뒤, 교과별로 제출된 2027학년도 신입생 교육과정 수정사항을 관리자 협의를 거쳐 정리했습니다. 오늘은 <b>국·영·수 선택과목 압축, 수학과 선택과목 삭제, 지구과학 학기 교체, 과학 고급 과목 신설</b> 4개 안건을 심의합니다.</p>
+
+      <div class="card">
+        <p class="footnote" style="margin-top:0;">적용 대상: 2027학년도 입학생(2027학년도 1학년) 교육과정 전체. 안건 1·4는 3학년 1·2학기 과목으로 2029학년도에 실제 운영되며, 2026학년도 이전 입학생은 입학 당시 확정된 기존 교육과정에 따라 운영합니다.</p>
+      </div>
+
+      <p class="eyebrow" style="margin-top:26px;">Ⅱ · 안건 1 — 3학년 2학기 국·영·수 선택과목 압축</p>
+      <h2>택1 구조를 교과별 1과목으로 압축합니다</h2>
+      <p class="lead">현재 국어·영어·수학 교과 모두 3학년 2학기에 두 과목 중 1과목을 학생이 선택하도록 편성되어 있습니다. 진학 준비, 학업 역량 강화, 교육과정 운영의 실효성을 고려하여 교과별 1과목으로 압축 운영하는 방안을 상정합니다.</p>
+
+      <div class="card">
+        <h3><span class="n">01</span>교과별 압축 내역</h3>
+        <div class="table-wrap">
+          <table>
+            <thead><tr><th>교과</th><th>현행(택1)</th><th>수정안</th><th>수정 사유</th></tr></thead>
+            <tbody>
+              <tr><td><b>국어</b></td><td>매체 의사소통 · 직무 의사소통</td><td><span class="vote-tag">매체 의사소통</span></td><td style="font-size:.84rem;color:var(--ink-soft);">직무 의사소통 선택 수요 낮음, 언어·매체 균형 학습으로 역량 강화</td></tr>
+              <tr><td><b>영어</b></td><td>심화 영어 독해와 작문 · 직무 영어</td><td><span class="vote-tag">심화 영어 독해와 작문</span></td><td style="font-size:.84rem;color:var(--ink-soft);">수능 심층 독해·분석 능력 연계, 학업역량 심화 이력 제시</td></tr>
+              <tr><td><b>수학</b></td><td>실용 통계 · 직무 수학</td><td><span class="vote-tag">융합사고 수학</span></td><td style="font-size:.84rem;color:var(--ink-soft);">대수·미적분Ⅰ·확률과 통계 포괄 → 수능 연계·학습 연속성 확보</td></tr>
+            </tbody>
+          </table>
+        </div>
+        <p class="footnote">3학년 2학기까지 수능 대비 학습의 연속성을 확보하고, 소인수 과목을 해소하여 학급 편성·교원 배정·시간표 운영의 안정성을 높일 수 있습니다.</p>
+      </div>
+
+      <p class="eyebrow" style="margin-top:26px;">Ⅲ · 안건 2 — 수학과 선택과목 삭제 여부</p>
+      <h2>수학과 문화 · 수학과제 탐구, 삭제를 검토합니다</h2>
+      <div class="card">
+        <h3><span class="n">01</span>삭제 검토 대상 과목</h3>
+        <div class="table-wrap">
+          <table>
+            <thead><tr><th>과목</th><th>편성 학기</th><th>교과서</th><th>2년 연속 신청 인원</th><th>비고</th></tr></thead>
+            <tbody>
+              <tr><td><b>수학과 문화</b></td><td>2학년 1학기</td><td>있음(천재교육)</td><td><span class="vote-tag" style="background:var(--warn-soft);color:var(--ink);">10명 미만(폐강)</span></td><td style="font-size:.84rem;color:var(--ink-soft);">고등학교 수학보다 평균·비율 등 단순 개념 위주</td></tr>
+              <tr><td><b>수학과제 탐구</b></td><td>2학년 2학기</td><td>2022 개정 미개발</td><td><span class="vote-tag" style="background:var(--warn-soft);color:var(--ink);">10명 미만(폐강)</span></td><td style="font-size:.84rem;color:var(--ink-soft);">대안 교재 사용 시 학교운영위원회 심의 필요</td></tr>
+            </tbody>
+          </table>
+        </div>
+        <h3 style="margin-top:18px;"><span class="n">02</span>공통 판단 근거</h3>
+        <ul class="plain">
+          <li>가) 지속적 수요 부족 — 2년 연속 선택 인원 10명 미만</li>
+          <li>나) 교과 내용 적정성 — 단순 개념 중심 내용(수학과 문화)</li>
+          <li>다) 평가 공정성 — 개설 시 소인수 학생 대상 등급 산출 문제</li>
+          <li>라) 운영 절차 부담 — 교재 선정 시 학교운영위원회 심의 필요(수학과제 탐구)</li>
+        </ul>
+        <p class="footnote">인근 27개교 중 수학과제 탐구는 11개교(대부분 2학년 2학기)에 편성되어 있습니다. 실용 통계는 20개교, 직무 수학은 본교가 유일하게 편성하고 있습니다.</p>
+      </div>
+
+      <p class="eyebrow" style="margin-top:26px;">Ⅳ · 안건 3 — 지구과학 교과목 편성 학기 교체</p>
+      <h2>지구시스템과학을 먼저, 행성우주과학을 나중에</h2>
+      <div class="card">
+        <div class="decision-banner">
+          <div class="flow">
+            <span class="chip old">2-2 행성우주과학 · 3-1 지구시스템과학</span>
+            <span class="arrow">→</span>
+            <span class="chip new">2-2 지구시스템과학 · 3-1 행성우주과학</span>
+          </div>
+          <div class="verdict">기초가 되는 <b>지구시스템과학을 2학년에 먼저</b> 편성해 지구 환경의 상호작용 원리를 체계적으로 다진 후, 이를 심화·확장하는 천문·우주 영역의 <b>행성우주과학을 3학년에</b> 이수하도록 하여 과목 간 위계성을 확보합니다.</div>
+        </div>
+        <div class="table-wrap" style="margin-top:14px;">
+          <table>
+            <thead><tr><th>학기</th><th>현행</th><th>수정안</th></tr></thead>
+            <tbody>
+              <tr><td>2학년 2학기</td><td>행성우주과학</td><td><span class="vote-tag">지구시스템과학</span></td></tr>
+              <tr><td>3학년 1학기</td><td>지구시스템과학</td><td><span class="vote-tag">행성우주과학</span></td></tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+
+      <p class="eyebrow" style="margin-top:26px;">Ⅴ · 안건 4 — 과학 고급 과목 신설</p>
+      <h2>3학년 1학기, 고급 과목 4개를 신설합니다</h2>
+      <p class="lead">이공계열 진학 희망 학생과 학부모의 심화 학습 개설 요구를 반영하여, 3학년 1학기에 <b>고급 물리·고급 화학·고급 생명과학·고급 지구과학</b> 4개 과목을 신규 개설합니다.</p>
+      <div class="card">
+        <div class="table-wrap">
+          <table>
+            <thead><tr><th>구분</th><th>내용</th></tr></thead>
+            <tbody>
+              <tr><td><b>개설 배경</b></td><td>이공계열 진학 희망 학생과 학부모의 심화 학습 개설 요구를 적극 반영</td></tr>
+              <tr><td><b>기대 효과</b></td><td>전공 관련 학업 역량 심화와 학생별 진로 맞춤형 과목 선택권 보장</td></tr>
+            </tbody>
+          </table>
+        </div>
+        <div class="callout gold" style="margin-top:14px;"><b>고급 과목의 의미 —</b> 고급 과목은 이수 사실 자체보다 관련 과목에서의 성취와 이어질 때 의미가 있습니다. 예를 들어 물리학 분야는 역학과 에너지·전자기와 양자 등 관련 과목에서 우수한 성취를 거둔 학생이 고급 물리까지 이수할 때 전공 연계 효과가 가장 크며, 단순 이수만으로는 효과가 크지 않습니다.</div>
+      </div>
+
+      <p class="eyebrow" style="margin-top:26px;">Ⅵ · 회의에서 결정할 사항</p>
+      <div class="card">
+        <ul class="plain">
+          <li>1. 3학년 2학기 국어·영어·수학 선택과목을 매체 의사소통·심화 영어 독해와 작문·융합사고 수학으로 압축할지 여부</li>
+          <li>2. 수학과 문화·수학과제 탐구 삭제 여부</li>
+          <li>3. 지구시스템과학(2-2)·행성우주과학(3-1) 학기 교체 여부</li>
+          <li>4. 과학 고급 과목(물리·화학·생명과학·지구과학) 4개 신설 여부</li>
+        </ul>
+        <p class="footnote">심의 결과는 교과협의회별 2027학년도 교육과정 최종안에 반영한 뒤 학교운영위원회 심의 절차를 거칠 예정입니다.</p>
+      </div>
+    </section>
+  </main>
+</div><!-- /#session-s1023 -->
+
+
+
 <!-- ================= 연도별 원본 뷰어 모달 ================= -->
 <div class="xlsx-modal" id="xlsxModal" hidden>
   <div class="xlsx-modal-inner">
@@ -1548,22 +1673,40 @@
   var dlPromise = null;
   function getDownloads(){
     if(!dlPromise){
-      dlPromise = (window.claude && window.claude.use && window.parent !== window) ? window.claude.use('downloads').catch(function(){ return null; }) : Promise.resolve(null);
+      dlPromise = (window.claude && window.claude.use) ? window.claude.use('downloads').catch(function(){ return null; }) : Promise.resolve(null);
     }
     return dlPromise;
+  }
+  getDownloads();
+  function b64ToBytes(t){
+    var bin = atob(t.trim()), n = bin.length, u = new Uint8Array(n);
+    for(var i = 0; i < n; i++) u[i] = bin.charCodeAt(i);
+    return u;
   }
   document.addEventListener('click', function(e){
     var btn = e.target.closest ? e.target.closest('.dl-btn') : null;
     if(!btn) return;
     e.preventDefault(); e.stopPropagation();
-    var key = btn.getAttribute('data-dl');
-    var a = document.createElement('a');
-    a.href = 'files/' + key + (ZIPS[key] ? '.zip' : '.xlsx');
-    a.download = fname(key);
-    document.body.appendChild(a); a.click();
-    setTimeout(function(){ a.remove(); }, 1000);
+    var key = btn.getAttribute('data-dl'), name = fname(key);
+    btn.disabled = true;
+    getDownloads().then(function(dl){
+      if(!dl){ toast('이 화면에서는 파일 다운로드를 지원하지 않습니다'); return; }
+      return fetch('xb/' + key + '.txt').then(function(r){ if(!r.ok) throw new Error('fetch'); return r.text(); })
+        .then(function(t){
+          return dl.save({filename: name, data: b64ToBytes(t)}).then(function(){ toast('다운로드를 시작했습니다'); }, function(err){
+            var c = err && err.code;
+            if(c === 'declined') return;
+            if(c === 'rate_limited'){ toast('잠시 후 다시 눌러 주세요'); return; }
+            toast('이 화면에서는 파일 다운로드를 지원하지 않습니다');
+          });
+        });
+    })
+    .catch(function(){ toast('파일을 불러오지 못했습니다. 새로고침 후 다시 시도해 주세요'); })
+    .then(function(){ btn.disabled = false; });
   }, true);
 })();
 </script>
 </body>
 </html>
+
+</body></html>
